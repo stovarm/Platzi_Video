@@ -6,6 +6,7 @@
 
 html {
     font-size: 62.5%;
+    font-family: 'Mulish', sans-serif;
 }
 
 body {
@@ -17,6 +18,9 @@ body {
     background-color: #ab88ff;
     width: 100%;
     height: 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header_img {
@@ -30,13 +34,21 @@ body {
 }
 
 .header_menu_profile {
-    margin-right: 1rem;
-    width: 4rem;
+    display: flex;
+    font-size: 1.5rem;
+    align-items: center;
+    
 }
 
 .header_menu_profile img {
-    width: 5rem;
+    width: 4.5rem;
+    margin-right: 0.8rem;
 }
+
+.header_menu_profile p {
+    color: white;
+}
+
 
 .header_menu ul {
     display: none;
@@ -44,6 +56,23 @@ body {
     position: absolute;
     width: 10rem;
     text-align: right;
-    margin-right: -1,4rem;
+    margin: 0px 0px 0px -12px;
+    font-size: 1.5rem;
 }
 
+.header_menu:hover ul, ul:hover {
+    display: block;     /* Al utilizar el display none de arriba en el Ul y display block en hover creamos el efecto de solo mostrarse al hacer hover */
+}
+
+.header_menu li {
+    margin: 10px 0px; 
+}
+
+.header_menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+.header_menu li a:hover {
+    text-decoration: underline;
+}
