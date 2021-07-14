@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.carrousel {
+    width: 100%;
+    overflow: scroll; /* propeidad para hacer el carrousel un scroll horizontal. */
+    padding: 3rem;
+    position: relative;
+}
+
+.carrousel_container {
+    white-space: nowrap; /*por defecto se ubicarian los elementos hacía abajo, con esta propiedad los deja seguir */
+    margin: 7rem 0rem;
+    padding-bottom: 1rem;    
+}
+
+.carrousel_container_item {
+    width: 20rem;
+    height: 25rem;
+    border-radius: 2rem;
+    background-color: palevioletred;
+    overflow: hidden;
+    margin-right: 1rem;
+    display: inline-block;
+    cursor: pointer;
+    transition: 450ms;   /*Tiempo que se demora en hacer la animación... hace que se vea mas fluida  */
+    transform-origin: center left;   /*Se centre comenzando desde la izq */
+}
+
+.carrousel_container_item:hover ~ .carrousel_container_item {  /*cuando haga hover y tmb sin hacerlo haga esto.... Desplazarse a la derecha */
+    transform: translate3d(10rem, 0, 0);
+}
+
+.carrousel_container:hover .carrousel_container_item {    /*cuando haga hover el elemento haga esto.... Opacarse*/
+    opacity: 0.3;
+}
+
+.carrousel_container:hover .carrousel_container_item:hover {     /*Cuando haga hover el elemento que este hover haga esto...  Aumente su escala*/
+    transform: scale(1.5);
+    opacity: 1;   /*Cuando le haga hover vuelva a opacidad 100% */
+}
