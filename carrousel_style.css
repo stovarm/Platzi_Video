@@ -21,7 +21,7 @@ html {
     padding-bottom: 1rem;    
 }
 
-.carrousel_container_item {
+.carrousel-item {
     width: 20rem;
     height: 25rem;
     border-radius: 2rem;
@@ -32,17 +32,38 @@ html {
     cursor: pointer;
     transition: 450ms;   /*Tiempo que se demora en hacer la animación... hace que se vea mas fluida  */
     transform-origin: center left;   /*Se centre comenzando desde la izq */
+    position: relative;
 }
 
-.carrousel_container_item:hover ~ .carrousel_container_item {  /*cuando haga hover y tmb sin hacerlo haga esto.... Desplazarse a la derecha */
+.carrousel-item:hover ~ .carrousel-item {  /*cuando haga hover y tmb sin hacerlo haga esto.... Desplazarse a la derecha */
     transform: translate3d(10rem, 0, 0);
 }
 
-.carrousel_container:hover .carrousel_container_item {    /*cuando haga hover el elemento haga esto.... Opacarse*/
+.carrousel_container:hover .carrousel-item {    /*cuando haga hover el elemento haga esto.... Opacarse*/
     opacity: 0.3;
 }
 
-.carrousel_container:hover .carrousel_container_item:hover {     /*Cuando haga hover el elemento que este hover haga esto...  Aumente su escala*/
+.carrousel_container:hover .carrousel-item:hover {     /*Cuando haga hover el elemento que este hover haga esto...  Aumente su escala*/
     transform: scale(1.5);
     opacity: 1;   /*Cuando le haga hover vuelva a opacidad 100% */
 }
+
+.carrousel-item_img {
+    width: 20rem;
+    height: 25rem;
+    object-fit: cover; /*Guardar la proporción de la imagen y que se acomode a las medidas que establecimos */
+}
+
+.carrousel-item_details {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+    font-size: 1rem;
+    opacity: 0;
+    transition: 450ms opacity;
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
