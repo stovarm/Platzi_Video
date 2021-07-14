@@ -28,3 +28,22 @@ body {
 .header_menu {
     margin-right: 3rem;
 }
+
+.header_menu_profile {
+    margin-right: 1rem;
+    width: 4rem;
+}
+
+.header_menu_profile img {
+    width: 5rem;
+}
+
+.header_menu ul {
+    display: none;
+    list-style: none;
+    position: absolute;
+    width: 10rem;
+    text-align: right;
+    margin-right: -1,4rem;
+}
+
