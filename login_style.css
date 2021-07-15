@@ -26,4 +26,10 @@ html {
 
 .login {
     background: linear-gradient(#21c08b, #ab88ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
 }
