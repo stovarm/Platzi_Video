@@ -10,7 +10,7 @@ html {
 }
 
 .header {
-    background-color: #8f57fd;
+    background-color: #21c08b;
     width: 100%;
     height: 10rem;
     display: flex;
@@ -22,4 +22,8 @@ html {
     width: 20rem;
     margin-top: 1rem;
     margin-left: 1rem;
+}
+
+.login {
+    background: linear-gradient(#21c08b, #ab88ff);
 }
