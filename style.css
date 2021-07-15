@@ -84,6 +84,7 @@ body {
 .main_title {
     color: white;
     font-size: 2.5rem;
+    text-align: center;
 }
 
 .main_input {
@@ -96,6 +97,7 @@ body {
     padding: 0px 20px;
     background-color: rgba(255, 255, 255, 0.1);
     outline: none;
+    
 
 }
 
