@@ -41,5 +41,30 @@ html {
     border-radius: 4rem;
     color: white;
     min-height: 70rem;
-    width: 30rem;
+    width: 35rem;
+}
+
+.login_container-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login_container-form label {
+    font-size: 1rem;
+}
+
+.login_container-remember-me {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.login_container-remember-me a {
+    color: white;
+    text-decoration: none;
+}
+
+.login_container-remember-me a:hover {
+    text-decoration: underline;
 }
