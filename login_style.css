@@ -68,3 +68,10 @@ html {
 .login_container-remember-me a:hover {
     text-decoration: underline;
 }
+
+.login_container-social-media > div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+
+}
