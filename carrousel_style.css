@@ -21,24 +21,6 @@ html {
     padding-bottom: 1rem;    
 }
 
-.carrousel-item {
-    width: 20rem;
-    height: 25rem;
-    border-radius: 2rem;
-    background-color: palevioletred;
-    overflow: hidden;
-    margin-right: 1rem;
-    display: inline-block;
-    cursor: pointer;
-    transition: 450ms;   /*Tiempo que se demora en hacer la animación... hace que se vea mas fluida  */
-    transform-origin: center left;   /*Se centre comenzando desde la izq */
-    position: relative;
-}
-
-.carrousel-item:hover ~ .carrousel-item {  /*cuando haga hover y tmb sin hacerlo haga esto.... Desplazarse a la derecha */
-    transform: translate3d(10rem, 0, 0);
-}
-
 .carrousel_container:hover .carrousel-item {    /*cuando haga hover el elemento haga esto.... Opacarse*/
     opacity: 0.3;
 }
@@ -48,6 +30,24 @@ html {
     opacity: 1;   /*Cuando le haga hover vuelva a opacidad 100% */
 }
 
+.carrousel-item {
+    width: 20rem;
+    height: 25rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    margin-right: 1rem;
+    display: inline-block;
+    cursor: pointer;
+    transition: 450ms;   /*Tiempo que se demora en hacer la animación... hace que se vea mas fluida  */
+    transform-origin: center left;   /*Se centre comenzando desde la izq */
+    position: relative;
+    font-size: 2rem;
+}
+
+.carrousel-item:hover ~ .carrousel-item {  /*cuando haga hover y tmb sin hacerlo haga esto.... Desplazarse a la derecha */
+    transform: translate3d(10rem, 0, 0);
+}
+
 .carrousel-item_img {
     width: 20rem;
     height: 25rem;
@@ -55,6 +55,7 @@ html {
 }
 
 .carrousel-item_details {
+    display: flex;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
     font-size: 1rem;
     opacity: 0;
@@ -65,5 +66,19 @@ html {
     left: 0;
     right: 0;
     bottom: 0;
+}
+
+.carrousel-item_details--img {
+    width: 2rem;
+}
+
+.carrousel-item:hover .carrousel-item_details {    /* Cuando seleccionesel item apareceelcontenido "texto logos etc." devolverle opaciocad a 1 pq esta en 0 en el Padre */
+    opacity: 1;
+}
+
+.carrousel-item_details--title {
+    color: white;
+    margin: 0.5rem 0rem 0rem 0rem;
+
 }
 
