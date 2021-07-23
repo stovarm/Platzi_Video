@@ -42,6 +42,7 @@ html {
     transform-origin: center left;   /*Se centre comenzando desde la izq */
     position: relative;
     font-size: 2rem;
+    cursor: pointer;
 }
 
 .carrousel-item:hover ~ .carrousel-item {  /*cuando haga hover y tmb sin hacerlo haga esto.... Desplazarse a la derecha */
@@ -66,6 +67,9 @@ html {
     left: 0;
     right: 0;
     bottom: 0;
+    align-items: flex-start; /*alinea los textos y iconos al lado izq */
+    flex-direction: column;  /* Acomodar el titulo y texto uno debajo del otro */
+    justify-content: flex-end; /*Poner los textos y iconos al final */
 }
 
 .carrousel-item_details--img {
@@ -82,3 +86,8 @@ html {
 
 }
 
+.carrousel-item_details--subtitle {
+    color: white;
+    font-size: 0.8rem;
+    margin: 0.3rem 0rem;
+}
