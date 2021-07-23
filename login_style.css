@@ -42,6 +42,10 @@ html {
     color: white;
     min-height: 70rem;
     width: 35rem;
+    display: flex;    
+    flex-direction: column;
+    justify-content: space-around;
+
 }
 
 .login_container-form {
@@ -56,8 +60,7 @@ html {
 .login_container-remember-me {
     color: white;
     display: flex;
-    justify-content: space-between;
-    margin-top: 1rem;
+    justify-content: space-between;    
 }
 
 .login_container-remember-me a {
@@ -69,9 +72,80 @@ html {
     text-decoration: underline;
 }
 
-.login_container-social-media > div {
+.login_container-social-media > div {    /* Todos los div que esten en la clase .login......socialmedia */
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
 
+.login_container-social-media > div > img{  /*Todas las img que esten en los div de esa clase..... */
+    width: 3rem;
+    margin-right: 0.5rem;
+}
+
+.login_container-register {
+    font-size: 1.2rem;
+}
+
+.login_container-register a {
+    font-size: 1.3rem;
+    color: rgb(54, 54, 54);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login_container-register a:hover {
+    text-decoration: underline;
+}
+
+.input {
+    background-color: transparent;
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 0.2rem solid white;
+    margin-bottom: 1.5rem;
+    padding: 0px 1.5rem;
+    outline: none;
+    height: 4rem; /* darle altura para separar el placeholder dela línea */
+}
+
+::placeholder {
+    color: white;
+}
+
+.button {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 2.5rem;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: bold;
+    height: 4rem;
+    letter-spacing: 0.1rem; 
+    margin : 1rem 0px;
+
+}
+
+.footer {
+    display:flex;
+    align-items: center;
+    height: 10rem;
+    width: 100%;
+    background-color: #ab88ff;
+    justify-content: center;
+}
+
+.footer a {
+    color: white;
+    cursor: pointer;
+    font-size: 1.4rem;
+    padding-left: 3rem;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
 }
