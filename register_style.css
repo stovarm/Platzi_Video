@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Mulish', sans-serif;
+}
+
+.header {
+    background-color:#21c08b; 
+    height: 10rem;
+}
+
+.header_logo {
+    width: 20rem;
+    margin: 1rem 0px 0px 1rem;
+}
+
+.register {
+    background: linear-gradient(#21c08b, #ab88ff);
+    min-height: calc(100vh - 20rem); /* Formula para que tome el 100 del viewport heitgh y le reste 200 px */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.register_container {
+    background-color:rgba(255, 255, 255, 0.1);
+    border: 0.2rem solid white;
+    border-radius: 2rem;
+    padding: 6rem 6.8rem 4rem;
+    width: 30rem;
+    min-height: 50rem;
+    display: flex;
+    flex-direction: column;    
+    justify-content: space-around;
+    color: white;
+}
+
+.register_container-form {
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+}
+
+.register_container-form-input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 0.2rem solid white;
+    background-color: transparent;
+    margin-bottom: 1.5rem;
+    padding: 0px 1.5rem;
+    outline: none;
+    height: 4rem;
+}
+
+::placeholder {
+    color: white;
+}
+
+.button {
+    background-color:rgba(255, 255, 255, 0.3);
+    border-radius: 20rem;
+    border: none;
+    color: white;
+    height: 4rem;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    margin: 1rem 0px;
+}
+
+.register_container a {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+
+
+    
+}
+.register_container a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: #ab88ff;
+    display: flex;
+    height: 10rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;    
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 0px 1rem;
+}
+
